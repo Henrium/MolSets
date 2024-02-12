@@ -1,6 +1,8 @@
 # Molecular Graph Deep Sets
 This repository contains an implementation of the molecular graph deep sets (MolSets) model for molecular mixture properties, associated with our paper [MolSets: Molecular graph deep sets learning for mixture property modeling](https://arxiv.org/abs/2312.16473).
 
+![Model architecture](MolSets_architecture.webp)
+
 ## Citation
 If you find this code useful, please consider citing the following paper:
 ```
