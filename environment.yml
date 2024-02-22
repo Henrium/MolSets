@@ -1,0 +1,23 @@
+name: molsets
+channels:
+  - pyg
+  - pytorch
+  - nvidia
+  - defaults
+  - conda-forge
+
+dependencies:
+  - matplotlib
+  - matplotlib-base
+  - numpy
+  - numpy-base
+  - pandas
+  - pip
+  - python
+  - pytorch>=2.0
+  - pytorch-scatter
+  - scikit-learn
+  - scipy
+  - seaborn
+  - pip:
+    - torch_geometric
