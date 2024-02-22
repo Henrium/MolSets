@@ -15,3 +15,14 @@ If you find this code useful, please consider citing the following paper:
       primaryClass={cs.LG}
 }
 ```
+
+## Requirements
+MolSets requires the following packages:
+- PyTorch >= 2.0
+- PyG (`torch_geometric`)
+- PyTorch Scatter (only for [DMPNN](https://github.com/itakigawa/pyg_chemprop))
+The environment can be set up by running
+```
+conda env create -f environment.yml
+```
+But package compatibility issues may occur and need to be manually corrected. To run on GPUs, CUDA and GPU-enabled versions of PyTorch and PyG are requried.
