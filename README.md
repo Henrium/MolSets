@@ -26,4 +26,4 @@ The environment can be set up by running
 ```
 conda env create -f environment.yml
 ```
-But package compatibility issues may occur and need to be manually corrected. To run on GPUs, CUDA and GPU-enabled versions of PyTorch and PyG are requried.
+But there may be package compatibility issues that need manual corrections. To run on GPUs, CUDA and GPU-enabled versions of PyTorch and PyG are requried.
