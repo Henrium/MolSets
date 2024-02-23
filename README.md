@@ -19,7 +19,7 @@ If you find this code useful, please consider citing the following paper:
 ## Descriptions
 `models.py` and `dmpnn.py` contain implementations of MolSets with standard graph convolutions and [DMPNN](https://github.com/itakigawa/pyg_chemprop), respectively.
 
-`main.py`, `main_dmpnn.py`, and `predict.py` are for evaluation and prediction; see [Usage](##Usage) for details.
+`main.py`, `main_dmpnn.py`, and `predict.py` are for evaluation and prediction; see [Usage](#Usage) for details.
 
 `data_utils.py` is for processing molecular graph data.
 
