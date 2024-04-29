@@ -56,7 +56,7 @@ Use `main.py` to train the MolSets model (with standard graph convolutions) or e
 and see the results. Training may take minutes to hours depending on the device and data size. For the model with DMPNN, use `main_dmpnn.py` instead, following similar procedures.
 
 ### Inference
-Use `predict` to make inferences on candidate mixtures with a trained model. Specify the path to the candidate data file in `candidate_data` and the model checkpoint file in `model.load_`. Information about training data is needed if feature normalization is used, as in `data_utils.py`.
+Use `predict.py` to make inferences on candidate mixtures with a trained model. Specify the path to the candidate data file in `candidate_data` and the model checkpoint file in `model.load_`. Information about training data is needed if feature normalization is used, as in `data_utils.py`.
 After setup, run
 ```
 python predict.py
