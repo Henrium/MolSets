@@ -27,7 +27,14 @@ If you find this code useful, please consider citing the following paper:
 `data_utils.py` is for processing molecular graph data.
 
 `data/` provides datasets used in the paper:
-- `data_list.pkl` contains processed data from the dataset curated in [*ACS Cent. Sci.* 2023, 9, 2, 206–216](https://doi.org/10.1021/acscentsci.2c01123).
+- `data_list.pkl` contains processed data from the dataset curated in [*ACS Cent. Sci.* 2023, 9, 2, 206–216](https://doi.org/10.1021/acscentsci.2c01123). Data is organized as a nested list, where each entry contains the following:
+  - An integer index;
+  - A list of solvent molecular graphs in `torch_geometric.data.Data` format;
+  - A list of solvent molecular weights;
+  - A list of solvent weight fractions;
+  - Salt molality (mol/kg);
+  - Salt molecular graph;
+  - Logarithm Conductivity at 298 K (log S/cm)
 - `data_df_stats.pkl` organizes the data with some statistics in a `pandas` DataFrame.
 - `all_bin_candidates.pkl` contains the candidates (equal weight binary molecular mixture + 1 m salt) for virtual screening.
 
