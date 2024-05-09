@@ -13,8 +13,14 @@ This repository contains an implementation of the molecular graph deep sets (Mol
 
 `data_utils.py` is for processing molecular graph data.
 
-`data/` provides datasets used in the paper:
-- `data_list.pkl` contains processed data from the dataset curated in [*ACS Cent. Sci.* 2023, 9, 2, 206–216](https://doi.org/10.1021/acscentsci.2c01123). Data is organized as a nested list, where each entry contains:
+`data/` provides datasets used in the paper. 
+
+<details open>
+  <summary>
+    Details on datasets:
+  </summary>
+  
+- `data_list.pkl` contains processed data from the dataset curated in [*ACS Cent. Sci.* 2023, 9, 2, 206–216](https://doi.org/10.1021/acscentsci.2c01123).
   - An integer index;
   - A list of solvent molecular graphs in `torch_geometric.data.Data` format;
   - A list of solvent molecular weights (g/mol);
@@ -24,7 +30,8 @@ This repository contains an implementation of the molecular graph deep sets (Mol
   - Logarithm conductivity at 298 K (log S/cm).
 - `data_df_stats.pkl` organizes the data with some statistics in `pandas.DataFrame` format.
 - `all_bin_candidates.pkl` contains the candidates (equal weight binary molecular mixture + 1 m salt) for virtual screening. Organized in the same way as `data_list.pkl`.
-
+  </details>
+  
 `results` provides model checkpoints and saves files generated in runs.
 
 *Note: [Git LFS](https://git-lfs.com/) is required to download the `.pkl` files properly. Please download them manually if you do not have Git LFS.
