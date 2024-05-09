@@ -23,11 +23,12 @@ This repository contains an implementation of the molecular graph deep sets (Mol
   - Salt molecular graph;
   - Logarithm conductivity at 298 K (log S/cm).
 - `data_df_stats.pkl` organizes the data with some statistics in `pandas.DataFrame` format.
-- `all_bin_candidates.pkl` contains the candidates (equal weight binary molecular mixture + 1 m salt) for virtual screening. Organized in the same format as `data_list.pkl`.
+- `all_bin_candidates.pkl` contains the candidates (equal weight binary molecular mixture + 1 m salt) for virtual screening. Organized in the same way as `data_list.pkl`.
 
 `results` provides model checkpoints and saves files generated in runs.
 
 *Note: [Git LFS](https://git-lfs.com/) is required to download the `.pkl` files properly. Please download them manually if you do not have Git LFS.
+**Data handling is not yet optimized for efficiency. Contributions are welcome!
 
 ## Requirements
 MolSets requires the following packages:
