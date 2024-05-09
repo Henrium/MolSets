@@ -6,19 +6,6 @@ This repository contains an implementation of the molecular graph deep sets (Mol
 
 ![Model architecture](MolSets_architecture.webp)
 
-## Citation
-If you find this code useful, please consider citing the following paper:
-```
-@misc{zhang2023molsets,
-      title={MolSets: Molecular graph deep sets learning for mixture property modeling}, 
-      author={Hengrui Zhang and Jie Chen and James M. Rondinelli and Wei Chen},
-      year={2023},
-      eprint={2312.16473},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
-}
-```
-
 ## Descriptions
 `models.py` and `dmpnn.py` contain implementations of MolSets with standard graph convolutions and [DMPNN](https://github.com/itakigawa/pyg_chemprop), respectively.
 
@@ -27,16 +14,16 @@ If you find this code useful, please consider citing the following paper:
 `data_utils.py` is for processing molecular graph data.
 
 `data/` provides datasets used in the paper:
-- `data_list.pkl` contains processed data from the dataset curated in [*ACS Cent. Sci.* 2023, 9, 2, 206–216](https://doi.org/10.1021/acscentsci.2c01123). Data is organized as a nested list, where each entry contains the following:
+- `data_list.pkl` contains processed data from the dataset curated in [*ACS Cent. Sci.* 2023, 9, 2, 206–216](https://doi.org/10.1021/acscentsci.2c01123). Data is organized as a nested list, where each entry contains:
   - An integer index;
   - A list of solvent molecular graphs in `torch_geometric.data.Data` format;
-  - A list of solvent molecular weights;
+  - A list of solvent molecular weights (g/mol);
   - A list of solvent weight fractions;
   - Salt molality (mol/kg);
   - Salt molecular graph;
-  - Logarithm Conductivity at 298 K (log S/cm)
-- `data_df_stats.pkl` organizes the data with some statistics in a `pandas` DataFrame.
-- `all_bin_candidates.pkl` contains the candidates (equal weight binary molecular mixture + 1 m salt) for virtual screening.
+  - Logarithm conductivity at 298 K (log S/cm).
+- `data_df_stats.pkl` organizes the data with some statistics in `pandas.DataFrame` format.
+- `all_bin_candidates.pkl` contains the candidates (equal weight binary molecular mixture + 1 m salt) for virtual screening. Organized in the same format as `data_list.pkl`.
 
 `results` provides model checkpoints and saves files generated in runs.
 
@@ -69,3 +56,16 @@ After setup, run
 python predict.py
 ```
 and the predictions will be written in a `.csv` file.
+
+## Citation
+If you find this code useful, please consider citing the following paper:
+```
+@misc{zhang2023molsets,
+      title={MolSets: Molecular graph deep sets learning for mixture property modeling}, 
+      author={Hengrui Zhang and Jie Chen and James M. Rondinelli and Wei Chen},
+      year={2023},
+      eprint={2312.16473},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+```
