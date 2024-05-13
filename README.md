@@ -15,7 +15,7 @@ This repository contains an implementation of the molecular graph deep sets (Mol
 
 `data/` provides datasets used in the paper. 
 
-<details open>
+<details>
   <summary>
     Details on datasets:
   </summary>
