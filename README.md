@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/724243554.svg)](https://zenodo.org/doi/10.5281/zenodo.11068425)
 
-This repository contains an implementation of the molecular graph deep sets (MolSets) model for molecular mixture properties, associated with our paper [MolSets: Molecular graph deep sets learning for mixture property modeling](https://arxiv.org/abs/2312.16473).
+This repository contains an implementation of the molecular graph deep sets (MolSets) model for molecular mixture properties, associated with our paper [Learning molecular mixture property Using chemistry-aware graph neural network](https://doi.org/10.1103/PRXEnergy.3.023006).
 
 ![Model architecture](MolSets_architecture.webp)
 
@@ -69,12 +69,14 @@ and the predictions will be written in a `.csv` file.
 ## Citation
 If you find this code useful, please consider citing the following paper:
 ```
-@misc{zhang2023molsets,
-      title={MolSets: Molecular graph deep sets learning for mixture property modeling}, 
-      author={Hengrui Zhang and Jie Chen and James M. Rondinelli and Wei Chen},
-      year={2023},
-      eprint={2312.16473},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+@article{zhang2024molsets,
+   author = {Zhang, Hengrui and Lai, Tianxing and Chen, Jie and Manthiram, Arumugam and Rondinelli, James M. and Chen, Wei},
+   title = {Learning molecular mixture property Using chemistry-aware graph neural network},
+   journal = {PRX Energy},
+   year = {2024},
+   volume = {3},
+   number = {2},
+   pages = {023006},
+   doi = {10.1103/PRXEnergy.3.023006}
 }
 ```
