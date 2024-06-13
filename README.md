@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/724243554.svg)](https://zenodo.org/doi/10.5281/zenodo.11068425)
 
-This repository contains an implementation of the molecular graph deep sets (MolSets) model for molecular mixture properties, associated with our paper [Learning molecular mixture property Using chemistry-aware graph neural network](https://doi.org/10.1103/PRXEnergy.3.023006).
+This repository contains an implementation of the molecular graph deep sets (MolSets) model for molecular mixture properties, associated with our paper [Learning molecular mixture property using chemistry-aware graph neural network](https://doi.org/10.1103/PRXEnergy.3.023006).
 
 ![Model architecture](MolSets_architecture.webp)
 
