@@ -71,7 +71,7 @@ If you find this code useful, please consider citing the following paper:
 ```
 @article{zhang2024molsets,
    author = {Zhang, Hengrui and Lai, Tianxing and Chen, Jie and Manthiram, Arumugam and Rondinelli, James M. and Chen, Wei},
-   title = {Learning molecular mixture property Using chemistry-aware graph neural network},
+   title = {Learning molecular mixture property using chemistry-aware graph neural network},
    journal = {PRX Energy},
    year = {2024},
    volume = {3},
