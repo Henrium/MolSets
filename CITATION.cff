@@ -6,6 +6,8 @@ authors:
     orcid: "https://orcid.org/0000-0002-3183-1654"
 title: "MolSets: Molecular graph deep sets"
 version: 1.0.0
+release-date: 2024-04-25
+url: "https://github.com/Henrium/MolSets"
 preferred-citation:
   title: "Learning molecular mixture property using chemistry-aware graph neural network"
   authors:
