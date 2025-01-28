@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it using the following metadata."
+title: "Learning molecular mixture property using chemistry-aware graph neural network"
+authors:
+  - family-names: "Zhang"
+    given-names: "Hengrui"
+  - family-names: "Lai"
+    given-names: "Tianxing"
+  - family-names: "Chen"
+    given-names: "Jie"
+  - family-names: "Manthiram"
+    given-names: "Arumugam"
+  - family-names: "Rondinelli"
+    given-names: "James M."
+  - family-names: "Chen"
+    given-names: "Wei"
+journal: "PRX Energy"
+year: 2024
+volume: 3
+issue: 2
+page: "023006"
+doi: 10.1103/PRXEnergy.3.023006
+type: article
